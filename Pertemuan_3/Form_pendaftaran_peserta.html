@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f8ff;
+            margin: 20px;
+        }
+        h1 {
+            color: #1a56b0;
+            text-align: center;
+        }
+        form {
+            background: #ffffff;
+            padding: 15px;
+            border: 1px solid #ccd;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            background: #1a56b0;
+            color: white;
+            padding: 6px;
+            text-align: left;
+        }
+        td {
+            border: 1px solid #ccd;
+            padding: 6px;
+        }
+        .aktif {
+            background: #e6eefb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pendaftaran Peserta</h1>
+
+    <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama" value="Budi Santoso"><br><br>
+        Jenis Kelamin: 
+        <input type="radio" name="jk" value="L" checked> L 
+        <input type="radio" name="jk" value="P"> P<br><br>
+        Jurusan: 
+        <select name="jurusan">
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+        </select><br><br>
+        <button type="submit" style="background: #1a56b0; color: white; border: none; padding: 6px 12px;">Kirim</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+        </tr>
+        <tr class="aktif">
+            <td>2</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+
+</body>
+</html>

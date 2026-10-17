@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Komentar: Pengaturan CSS untuk tampilan halaman -->
+    <meta charset="UTF-8">
+    <title>Data Mahasiswa</title>
+    <style>
+        /* CSS: Jenis huruf, warna, padding, dan border */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8ff;
+            color: #333333;
+            margin: 20px;
+        }
+        h1 {
+            color: #1a56b0;
+            text-align: center;
+        }
+        form {
+            background: #ffffff;
+            padding: 15px;
+            border: 1px solid #ccd;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #ffffff;
+        }
+        th {
+            background-color: #1a56b0;
+            color: white;
+            padding: 8px;
+            border: 1px solid #ccd;
+            text-align: left;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #ccd;
+        }
+        /* Minimal satu class CSS */
+        .baris-selang {
+            background-color: #e6eefb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Komentar: Judul Halaman -->
+    <h1>Data Mahasiswa</h1>
+
+    <!-- Komentar: Form dengan 6 elemen berbeda (text, email, radio, checkbox, select, textarea) -->
+    <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Jenis Kelamin: 
+        <input type="radio" name="jk" value="L"> Laki-laki
+        <input type="radio" name="jk" value="P"> Perempuan<br><br>
+        Hobi: 
+        <input type="checkbox" name="hobi1" value="Membaca"> Membaca
+        <input type="checkbox" name="hobi2" value="Memancing"> Memancing
+        <input type="checkbox" name="hobi3" value="Olahraga"> Olahraga<br><br>
+        Prodi: 
+        <select name="prodi">
+            <option>Teknik Lingkungan</option>
+            <option>Teknologi Informasi</option>
+            <option>Teknik Mesin</option>
+            <option>Manajemen</option>
+            <option>Ilmu Politik</option>
+        </select><br><br>
+        Alamat:<br>
+        <textarea name="alamat" rows="3"></textarea><br><br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Komentar: Tabel data 5 mahasiswa dengan colspan -->
+    <table>
+        <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Prodi</th>
+            <th>IPK</th>
+        </tr>
+        <tr>
+            <td>10123001</td>
+            <td>Aidil Ramadani</td>
+            <td>Teknik Lingkungan</td>
+            <td>3.75</td>
+        </tr>
+        <tr class="baris-selang">
+            <td>10123002</td>
+            <td>Selvi Maretiani</td>
+            <td>Manajemen</td>
+            <td>3.80</td>
+        </tr>
+        <tr>
+            <td>10123003</td>
+            <td>Intan Pertiwi</td>
+            <td>Teknologi Informasi</td>
+            <td>4.00</td>
+        </tr>
+        <tr class="baris-selang">
+            <td>10123004</td>
+            <td>Fina Agustina</td>
+            <td>Ilmu Politik</td>
+            <td>3.90</td>
+        </tr>
+        <tr>
+            <td>10123005</td>
+            <td>Atan Erlangga</td>
+            <td>Teknik Mesin</td>
+            <td>3.65</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right; font-weight: bold;">Rata-rata IPK:</td>
+            <td>3.72</td>
+        </tr>
+    </table>
+
+</body>
+</html>
