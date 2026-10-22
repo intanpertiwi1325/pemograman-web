@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+/* Tampilan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Judul nama */
+h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
+
+/* Keterangan jurusan */
+.jurusan {
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Teks hobi */
+.info { font-size: 14px; color: #64748b; }
+
+/* Kartu: width 360px, tetapi tampil 360px karena border-box */
+.kartu {
+    width: 360px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+}
