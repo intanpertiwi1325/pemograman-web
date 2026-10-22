@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- 2. Selector elemen: pengaturan dasar halaman ---------- */
+body {
+  font-family: Arial, sans-serif;        /* font + cadangan */
+  font-size: 16px;
+  line-height: 1.6;                      /* jarak antarbaris */
+  color: #334155;                        /* warna HEX */
+  background-color: rgb(247, 218, 235);           /* warna NAMA */
+  margin: 0;
+  padding: 20px;
+}
+
+/* ---------- 3. Selector ID: bagian header ---------- */
+#header-profil {
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 2px dashed #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* ---------- 4. Selector grup: h1 dan h2 berbagi gaya ---------- */
+h1, h2 {
+  font-family: Georgia, serif;
+  color: #56033d;
+  margin: 0 0 8px 0;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; }
+
+/* ---------- 5. Selector class: kotak utama ---------- */
+/* Lebar tetap + di tengah halaman (margin: 0 auto) */
+.kotak-utama {
+  width: 480px;
+  margin: 40px auto;                     /* atas-bawah 40px, kiri-kanan auto */
+  padding: 28px;
+  background-color: rgba(255, 255, 255, 0.92);  /* warna RGBA (semi transparan) */
+  border: 2px solid #e2b0b9;
+  border-radius: 14px;
+}
+
+/* ---------- 6. Teks ---------- */
+.prodi {
+  margin: 0;
+  font-style: italic;
+  text-transform: uppercase;             /* huruf kapital */
+  letter-spacing: 1px;
+  color: rgb(37, 99, 235);               /* warna RGB */
+}
+
+.deskripsi p {
+  text-align: justify;                   /* rata kiri-kanan */
+}
+
+.catatan {
+  margin: 20px 0 0 0;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+/* ---------- 7. Selector turunan (descendant) ---------- */
+/* Hanya <li> di dalam .keahlian; display: inline-block (elemen ke-1) */
+.keahlian ul {
+  list-style: none;                      /* hilangkan bullet */
+  padding: 0;
+  margin: 0;
+}
+
+.keahlian li {
+  display: inline-block;                 /* sebaris, tapi bisa diatur ukurannya */
+  margin: 4px 6px 4px 0;
+  padding: 6px 14px;
+  background-color: #efa9c7;
+  color: #56033d;
+  border: 1px solid #e6889e;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* ---------- 8. Tombol ---------- */
+.area-tombol {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* display: inline-block (elemen ke-2) */
+.tombol {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #640407;
+  color: #ffffff;
+  text-decoration: none;                 /* hilangkan garis bawah tautan */
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+/* Efek saat kursor di atas tombol */
+.tombol:hover {
+  background-color: #1e3a8a;
+}
