@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf2f8;
+  color: rgb(75, 53, 66);
+  line-height: 1.6;
+  margin: 0;
+  padding: 1px;
+}
+
+.kotak-utama {
+  width: 460px;
+  max-width: 92%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid #f9a8d4;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(190, 24, 93, 0.15);
+}
+
+#header-profil {
+  text-align: center;
+  background-color: #fce7f3;
+  padding: 18px 12px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  color: #9d174d;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+h2 {
+  color: #be185d;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.prodi {
+  color: hotpink;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 4px 0 0 0;
+}
+
+.deskripsi {
+  margin-bottom: 22px;
+}
+
+.deskripsi p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: rgba(251, 207, 232, 0.35);
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.keahlian {
+  text-align: center;
+}
+
+.keahlian ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.keahlian li {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 14px;
+  background-color: #fce7f3;
+  color: #9d174d;
+  border: 1px solid #f9a8d4;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.area-tombol {
+  text-align: center;
+  margin: 26px 0;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #be185d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.tombol:hover {
+  background-color: #9d174d;
+}

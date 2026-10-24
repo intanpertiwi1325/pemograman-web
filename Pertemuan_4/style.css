@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f1f5f9;
@@ -18,7 +20,7 @@ h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
 
 .kartu {
   width: 360px;
-  margin: 40px auto;
+  margin: 40px 0;
   padding: 24px;
   background-color: #ffffff;
   border: 2px solid #cbd5e1;
@@ -26,7 +28,7 @@ h1 { color: #1e3a8a; font-size: 2rem; text-align: center; }
 }
 
 .tombol {
-  display: inline-block;
+  display: block;
   margin-top: 12px;
   padding: 10px 20px;
   background-color: #2563eb;
